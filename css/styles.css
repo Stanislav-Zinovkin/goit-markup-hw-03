@@ -3,6 +3,62 @@ body {
   color: #434455;
   background-color: #ffffff;
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+.hidden {
+  visibility: hidden;
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+section {
+  padding: 120px 0;
+}
+.container {
+  max-width: 1158px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.header-page {
+  border-bottom: 1px solid #e7e9fc;
+}
+.header-container {
+  display: flex;
+  align-items: center;
+}
+.header-nav {
+  display: flex;
+  align-items: center;
+}
+.site-nav {
+  display: flex;
+  align-items: center;
+
+  gap: 40px;
+}
+.contact-list {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+.con-links {
+  margin-left: auto;
+}
 .logo-link {
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
@@ -13,6 +69,8 @@ body {
   color: #2e2f42;
 }
 .logo {
+  padding: 24px 0;
+  margin-right: 76px;
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 18px;
@@ -26,6 +84,8 @@ address {
   font-style: normal;
 }
 .link {
+  display: block;
+  padding: 24px 0;
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
   font-size: 16px;
@@ -48,6 +108,8 @@ address {
   color: #404bbf;
 }
 .contact {
+  display: block;
+  padding: 24px 0;
   font-style: normal;
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
@@ -57,7 +119,18 @@ address {
   color: #434455;
   text-decoration: none;
 }
+.hero {
+  width: 100%;
+}
+.main-page {
+  background-color: #2e2f42;
+}
 .title-text {
+  display: block;
+  padding-top: 188px;
+  margin: 0 auto;
+  padding-bottom: 48px;
+  width: 496px;
   background-color: #2e2f42;
   font-family: 'Roboto', sans-serif;
   font-weight: 700;
@@ -73,21 +146,60 @@ address {
 .button:focus {
   background-color: #404bbf;
 }
+
 .button {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 188px;
+  border-radius: 4px;
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
   font-size: 16px;
+  width: 169px;
+  height: 56px;
   line-height: 150%;
   letter-spacing: 0.04em;
   color: #fff;
   background-color: #4d5ae5;
-  text-align: left;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  text-align: center;
   cursor: pointer;
 }
-.main-page {
-  background-color: #2e2f42;
+.section-f {
+  padding-top: 120px;
+  padding-bottom: 91px;
 }
-
+.features-list-item {
+  width: calc(100 - 72) / 4;
+}
+.features-list {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+.team-page {
+  margin-bottom: 72px;
+}
+.membership {
+  text-align: center;
+  padding: 32px 16px;
+}
+.position {
+  margin-top: 8px;
+}
+.work-gallery {
+  width: calc(100 - 72) / 4;
+  box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
+    0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+  background: #fff;
+  border-radius: 0 0 4px 4px;
+  background-color: #ffffff;
+}
+.work-list {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
 .team-page,
 .portfolio {
   font-family: 'Roboto', sans-serif;
@@ -109,6 +221,24 @@ address {
   letter-spacing: 0.02em;
   color: #2e2f42;
 }
+.descr {
+  margin-top: 8px;
+}
+.portfolio {
+  margin-bottom: 72px;
+}
+.prod {
+  padding-top: 32px;
+}
+.img-prod {
+  border: 1px solid #e7e9fc;
+  width: 360px;
+}
+.prod-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
 .type-of-prod {
   background-color: #ffffff;
   font-family: 'Roboto', sans-serif;
@@ -123,9 +253,7 @@ address {
 
   color: #f4f4fd;
 }
-.work-gallery {
-  background-color: #ffffff;
-}
+
 .descr,
 .position {
   font-family: 'Roboto', sans-serif;
@@ -142,10 +270,17 @@ address {
   line-height: 150%;
   letter-spacing: 0.02em;
   color: #f4f4fd;
+  margin-top: 16px;
+  width: 264px;
+}
+.footer {
+  display: flex;
+  flex-direction: column;
 }
 #footer {
   background-color: #2e2f42;
 }
+
 .foot-link {
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
@@ -165,9 +300,7 @@ address {
   color: #f4f4fd;
   text-decoration: none;
 }
-.hidden {
-  visibility: hidden;
-}
-ul {
-  list-style-type: none;
+.foot {
+  padding: 100px;
+  justify-content: flex-start;
 }
