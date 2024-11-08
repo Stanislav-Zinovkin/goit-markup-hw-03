@@ -170,7 +170,7 @@ address {
   padding-bottom: 91px;
 }
 .features-list-item {
-  width: calc(100 - 72) / 4;
+  width: calc(100% - 72px) / 4;
 }
 .features-list {
   display: flex;
@@ -188,7 +188,7 @@ address {
   margin-top: 8px;
 }
 .work-gallery {
-  width: calc(100 - 72) / 4;
+  width: calc(100% - 72px) / 4;
   box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
     0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
   background: #fff;
