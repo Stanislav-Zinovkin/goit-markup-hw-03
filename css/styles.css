@@ -237,7 +237,7 @@ address {
   letter-spacing: 0.02em;
   color: #2e2f42;
 }
-.descr .portfolio {
+.portfolio {
   margin-bottom: 72px;
 }
 .prod {
@@ -256,6 +256,7 @@ address {
   row-gap: 48px;
 }
 .type-of-prod {
+  margin-bottom: 8px;
   background-color: #ffffff;
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
