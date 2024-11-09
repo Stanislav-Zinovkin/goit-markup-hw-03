@@ -12,9 +12,7 @@ h6,
 p {
   margin: 0;
 }
-.hidden {
-  visibility: hidden;
-}
+
 ul {
   list-style-type: none;
   padding: 0;
@@ -123,14 +121,12 @@ address {
   width: 100%;
 }
 .main-page {
+  padding: 188px 0;
   background-color: #2e2f42;
 }
 .title-text {
-  display: block;
-  padding-top: 188px;
   margin: 0 auto;
-  padding-bottom: 48px;
-  width: 496px;
+  max-width: 496px;
   background-color: #2e2f42;
   font-family: 'Roboto', sans-serif;
   font-weight: 700;
@@ -155,8 +151,9 @@ address {
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
   font-size: 16px;
-  width: 169px;
+  min-width: 169px;
   height: 56px;
+  border: none;
   line-height: 150%;
   letter-spacing: 0.04em;
   color: #fff;
@@ -166,11 +163,15 @@ address {
   cursor: pointer;
 }
 .section-f {
-  padding-top: 120px;
-  padding-bottom: 91px;
+  padding: 120px 0;
+}
+
+.visually-hidden {
+  margin-bottom: 8px;
+  visibility: hidden;
 }
 .features-list-item {
-  width: calc(100% - 72px) / 4;
+  width: calc((100% - 72px) / 4);
 }
 .features-list {
   display: flex;
@@ -182,19 +183,24 @@ address {
 }
 .membership {
   text-align: center;
-  padding: 32px 16px;
+  padding: 32px 0;
+}
+.workers {
+  text-align: center;
+  margin-bottom: 8px;
 }
 .position {
-  margin-top: 8px;
+  text-align: center;
 }
 .work-gallery {
-  width: calc(100% - 72px) / 4;
+  width: calc((100% - 72px) / 4);
   box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
     0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
   background: #fff;
   border-radius: 0 0 4px 4px;
   background-color: #ffffff;
 }
+
 .work-list {
   display: flex;
   align-items: center;
@@ -228,16 +234,18 @@ address {
   margin-bottom: 72px;
 }
 .prod {
-  padding-top: 32px;
+  padding: 32px 16px;
+  border: 1px solid #e7e9fc;
+  border-top: none;
 }
 .img-prod {
-  border: 1px solid #e7e9fc;
-  width: 360px;
+  width: calc((100% - 48px) / 3);
 }
 .prod-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 24px;
+  column-gap: 24px;
+  row-gap: 48px;
 }
 .type-of-prod {
   background-color: #ffffff;
@@ -274,6 +282,7 @@ address {
   width: 264px;
 }
 .footer {
+  padding: 100px 0;
   display: flex;
   flex-direction: column;
 }
@@ -282,6 +291,8 @@ address {
 }
 
 .foot-link {
+  display: inline-block;
+  margin-bottom: 16px;
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 18px;
@@ -301,6 +312,5 @@ address {
   text-decoration: none;
 }
 .foot {
-  padding: 100px;
   justify-content: flex-start;
 }
